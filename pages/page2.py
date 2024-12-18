@@ -73,7 +73,7 @@ if button4:
     ax.set_ylabel('День недели')
     st.pyplot(fig)
     plt.savefig('4.png')
-    with open(fig, 'rb') as file:
+    with open('4.png', 'rb') as file:
         dw = st.sidebar.download_button(label='Скачать график', data=file,file_name='4.png', mime='image/png' )
 
 button5 = st.sidebar.button('Сумма всех счетов за каждый день')
